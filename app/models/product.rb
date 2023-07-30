@@ -15,4 +15,3 @@ class Product < ActiveRecord::Base
  def average_rating
   self.reviews.average('star_rating').to_f
  end
- 

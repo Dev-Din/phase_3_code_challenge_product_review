@@ -9,4 +9,5 @@ class User < ActiveRecord::Base
  def remove_reviews(product)
   self.reviews.where(product: product).destroy_all
  end
+ 
 end
